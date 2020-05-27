@@ -1,0 +1,184 @@
+/* Global Section */
+.button-global-style {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: none;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 1.125rem;
+  background-color: white;
+}
+
+.button-global-style:hover {
+  box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.1), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pink-button {
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  font-size: 0.875rem;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+#top {
+  background: url(../images/bg-hero-desktop.svg) no-repeat center center/cover hsl(193, 100%, 96%);
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+/* NavBar Section */
+nav {
+  display: flex;
+}
+
+nav>button {
+  margin-left: auto;
+}
+
+/* Top Section */
+.wrapper {
+  display: flex;
+  margin: 80px 0;
+}
+
+.wrapper h1 {
+  font-size: 2.5rem;
+  color: hsl(192, 100%, 9%);
+}
+
+.wrapper p {
+  margin: 0 80px 30px 0;
+  line-height: 1.5;
+  color: hsl(208, 11%, 55%);
+}
+
+/* Feature Section */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  margin: 50px 100px;
+  padding: 30px 30px 30px 80px;
+  color: hsl(192, 100%, 9%);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card div {
+  padding: 80px;
+}
+
+.card p {
+  line-height: 2;
+  color: hsl(208, 11%, 55%);
+}
+
+.customCard {
+  width: 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+  border-radius: 15px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
+  transform: translateY(50%);
+}
+
+/* Footer Section */
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  z-index: -1;
+  color: white;
+  padding: 200px 50px 50px;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerWrapper p:hover {
+  color: hsl(208, 11%, 55%);
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* Global Section */
+  .button-global-style {
+    font-size: 0.875rem;
+  }
+
+  /* NavBar Section */
+  nav img {
+    width: 35%;
+  }
+
+  /* Top Section */
+  #top {
+    background: url(../images/bg-hero-mobile.svg) no-repeat center center/cover hsl(193, 100%, 96%);
+    padding: 20px;
+  }
+
+  .wrapper {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .wrapper h1 {
+    font-size: xx-large;
+  }
+
+  .wrapper p {
+    margin: 20px auto;
+  }
+
+  .wrapper img {
+    margin-top: 30px;
+  }
+
+  /* Feature Section */
+  .card {
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .card img {
+    order: -1;
+  }
+
+  .card div {
+    padding: 0;
+  }
+
+  .customCard {
+    width: 80%;
+    padding: 20px;
+  }
+
+  /* Footer Section */
+  .footer {
+    padding: 150px 20px 20px;
+  }
+
+  .footerWrapper {
+    display: block;
+  }
+
+  .footerWrapper div:nth-last-child(1) {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
